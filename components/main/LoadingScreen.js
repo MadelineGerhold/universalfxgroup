@@ -44,7 +44,7 @@ export default function LoadingScreen() {
               } progressguauge w-full h-1.5 rounded-full  overflow-hidden transition-all relative`}
             >
               <div
-                className="progressbar absolute rounded-full h-full top-0 left-0 transition-all bg-[#E3885A]"
+                className="progressbar absolute rounded-full h-full top-0 left-0 transition-all bg-[#02B0F6]"
                 style={{ width: `${progress}%` }}
               ></div>
             </div>

@@ -404,7 +404,7 @@ export default function DepwCrypto() {
                     className={`flex-cont ${
                       amountInUSD == 0
                         ? "/bg-gray-200 text-gray-500"
-                        : "bg-[#E3885A] text-white"
+                        : "bg-[#02B0F6] text-white"
                     }   py-4 cursor-pointer capitalize flex items-center font-bold  px-3 justify-center rounded-lg fon-bold text-sm w-full`}
                   >
                     <button className="capitalize">
@@ -549,7 +549,7 @@ export default function DepwCrypto() {
                   <div
                     className={`flex-cont 
                   
-                   bg-[#E3885A] text-white
+                   bg-[#02B0F6] text-white
                    py-4 cursor-pointer capitalize flex items-center font-bold  px-3 justify-center rounded-lg fon-bold text-sm w-full`}
                     onClick={handleVerifyDeposits}
                   >
@@ -561,7 +561,7 @@ export default function DepwCrypto() {
                     <div
                       className={`flex-cont 
                   
-                   bg-[#E3885A] text-white
+                   bg-[#02B0F6] text-white
                    py-4 cursor-pointer capitalize flex items-center font-bold  px-3 justify-center rounded-lg fon-bold text-sm w-full`}
                       onClick={handleToast}
                     >

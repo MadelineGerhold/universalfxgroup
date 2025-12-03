@@ -82,7 +82,7 @@ export default function DepwBank() {
                 <div
                   className={`flex-cont ${
                     amountForTransfer && amountForTransfer != 0
-                      ? "bg-[#E3885A] text-white"
+                      ? "bg-[#02B0F6] text-white"
                       : "bg-gray-300 text-gray-700"
                   }  py-4 cursor-pointer capitalize flex  items-center font-bold  px-3 justify-center rounded-lg fon-bold text-sm w-full`}
                 >
@@ -129,7 +129,7 @@ export default function DepwBank() {
               <DialogClose>
                 {" "}
                 <div
-                  className={`flex-cont bg-[#E3885A] py-4 cursor-pointer capitalize flex  items-center font-bold  px-3 justify-center rounded-lg fon-bold text-sm w-full`}
+                  className={`flex-cont bg-[#02B0F6] py-4 cursor-pointer capitalize flex  items-center font-bold  px-3 justify-center rounded-lg fon-bold text-sm w-full`}
                 >
                   <button className="capitalize">Continue</button>
                 </div>

@@ -16,7 +16,7 @@ export default function TradingPage({ market, marketType, provider, price }) {
       >
         <div className={`flex pl-3`}>
           <div
-            className={`flex items-center gap-1 text-[#E3885A] rounded-full px-3 py-1 text-sm font-bold ${
+            className={`flex items-center gap-1 text-[#02B0F6] rounded-full px-3 py-1 text-sm font-bold ${
               isDarkMode ? "bg-[#00a05520]" : "bg-[#00a05510]"
             }`}
           >

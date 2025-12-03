@@ -24,14 +24,14 @@ export default function MT() {
               Enhancing{" "}
               <span
                 className="
-text-[#E3885A]"
+text-[#02B0F6]"
               >
                 Investment
               </span>{" "}
               Opportunities with UniversalFX Group Versatile{" "}
               <span
                 className="
-text-[#E3885A]"
+text-[#02B0F6]"
               >
                 CFD Trading
               </span>
@@ -49,7 +49,7 @@ text-[#E3885A]"
               asset classes, including{" "}
               <span
                 className="
-text-[#E3885A] font-bold"
+text-[#02B0F6] font-bold"
               >
                 Forex, Indices, Shares, Commodities, Metals, Digital Currencies,
                 Bonds, and ETFs
@@ -59,7 +59,7 @@ text-[#E3885A] font-bold"
               States, along with the{" "}
               <span
                 className="
-text-[#E3885A] font-bold"
+text-[#02B0F6] font-bold"
               >
                 Australian Stock Exchange (ASX)
               </span>

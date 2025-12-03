@@ -35,7 +35,7 @@ export default function CT() {
               data-aos="fade-up"
               data-aos-delay="100"
             >
-              Follow <span className="text-[#E3885A]">Top-performing</span>{" "}
+              Follow <span className="text-[#02B0F6]">Top-performing</span>{" "}
               traders
             </div>
             <div
@@ -53,7 +53,7 @@ export default function CT() {
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20"
                     fill="currentColor"
-                    className="w-6 h-6 mr-2 text-[#E3885A]"
+                    className="w-6 h-6 mr-2 text-[#02B0F6]"
                   >
                     <path
                       fillRule="evenodd"
@@ -64,7 +64,7 @@ export default function CT() {
                 </div>
                 <div className="message">
                   Follow & copy{" "}
-                  <span className="font-bold text-[#E3885A]">
+                  <span className="font-bold text-[#02B0F6]">
                     top-performing
                   </span>{" "}
                   traders
@@ -80,7 +80,7 @@ export default function CT() {
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20"
                     fill="currentColor"
-                    className="w-6 h-6 mr-2 text-[#E3885A]"
+                    className="w-6 h-6 mr-2 text-[#02B0F6]"
                   >
                     <path
                       fillRule="evenodd"
@@ -104,7 +104,7 @@ export default function CT() {
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20"
                     fill="currentColor"
-                    className="w-6 h-6 mr-2 text-[#E3885A]"
+                    className="w-6 h-6 mr-2 text-[#02B0F6]"
                   >
                     <path
                       fillRule="evenodd"
@@ -115,7 +115,7 @@ export default function CT() {
                 </div>
                 <div className="message">
                   No need to develop your own{" "}
-                  <span className="text-[#E3885A] font-bold">trading plan</span>
+                  <span className="text-[#02B0F6] font-bold">trading plan</span>
                 </div>
               </div>
             </div>
@@ -127,7 +127,7 @@ export default function CT() {
                 data-aos="fade-up"
                 data-aos-delay="500"
               >
-                <div className="px-5 py-4 bg-[#E3885A] text-white font-semibold text-sm items-center rounded-xl flex">
+                <div className="px-5 py-4 bg-[#02B0F6] text-white font-semibold text-sm items-center rounded-xl flex">
                   <p>Start Copy-Trading</p>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

@@ -91,7 +91,7 @@ export default function Account() {
             <button
               disabled={!currentPassword && !newPassword && !confirmPassword}
               type="submit"
-              className="w-full px-4 py-3 cursor-pointer mt-4 text-sm rounded-lg bg-[#E3885A] text-white font-bold  focus:outline-none "
+              className="w-full px-4 py-3 cursor-pointer mt-4 text-sm rounded-lg bg-[#02B0F6] text-white font-bold  focus:outline-none "
             >
               Save Changes
             </button>

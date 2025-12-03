@@ -81,7 +81,7 @@ export default function Footer() {
             </div>
             <Link href="/auth" passHref>
               <div className="flex items-center justify-center ">
-                <div className="flex w-2/3 items-center justify-center md:w-full my-5 px-6 py-4 bg-[#E3885A] rounded-lg">
+                <div className="flex w-2/3 items-center justify-center md:w-full my-5 px-6 py-4 bg-[#02B0F6] rounded-lg">
                   {" "}
                   <p className="text-sm text-white">Create account</p>
                   <svg

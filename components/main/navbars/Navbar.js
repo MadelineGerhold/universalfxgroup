@@ -114,7 +114,7 @@ export default function Navbar() {
                       : ""
                   } ${
                     activeNavItem === item.label
-                      ? "font-bold opacity-100 text-blue-500 text-base border-b-2 border-b-[#E3885A]"
+                      ? "font-bold opacity-100 text-blue-500 text-base border-b-2 border-b-[#02B0F6]"
                       : "font-normal opacity0"
                   } mx-2 -px-2 pb-1 cursor-pointer transition-opacity duration-500 ${
                     activeNavItem !== item.label ? "hover:opacity-100" : ""
@@ -142,11 +142,11 @@ export default function Navbar() {
                 fill="currentColor"
                 className={`w-5 h-5 ${
                   isDarkMode && isScrolled
-                    ? "text-[#E3885A]"
+                    ? "text-[#02B0F6]"
                     : !isDarkMode && !isScrolled
-                    ? "text-[#E3885A]"
+                    ? "text-[#02B0F6]"
                     : isScrolled && !isDarkMode
-                    ? "text-[#E3885A]"
+                    ? "text-[#02B0F6]"
                     : ""
                 }`}
               >
@@ -159,11 +159,11 @@ export default function Navbar() {
                 fill="currentColor"
                 className={`w-5 h-5 ${
                   isDarkMode && isScrolled
-                    ? "text-[#E3885A]"
+                    ? "text-[#02B0F6]"
                     : !isDarkMode && !isScrolled
-                    ? "text-[#E3885A]"
+                    ? "text-[#02B0F6]"
                     : isScrolled && !isDarkMode
-                    ? "text-[#E3885A]"
+                    ? "text-[#02B0F6]"
                     : ""
                 }`}
               >
@@ -178,7 +178,7 @@ export default function Navbar() {
           <Link href="/auth" passHref>
             <div className="ctaButtons lg:flex justify-between text-sm font-bold hidden items-center">
               <div
-                className="btn1 px-4 cursor-pointer flex py-3 bg-clip-tet text-transprent bg-[#E3885A] rounded-xl"
+                className="btn1 px-4 cursor-pointer flex py-3 bg-clip-tet text-transprent bg-[#02B0F6] rounded-xl"
                 // style={{ backgroundColor: "#ffffff10" }}
               >
                 <p className="px-0.5 opacity-90 text-white flex items-center gap-x-2">
@@ -299,7 +299,7 @@ export default function Navbar() {
                       <div
                         className={`menu-item py-3  /my-2 hover:opacity-90 /text-gray-500 duration-200 cursor-pointer hover:bg-gray-100 px-2 //rounded-md flex items-center ${
                           activeNavItem === item.label
-                            ? " opacity-100 bg-[#00a05510]  text-[#E3885A] font-bold rounded-md hover:bg-green-50"
+                            ? " opacity-100 bg-[#00a05510]  text-[#02B0F6] font-bold rounded-md hover:bg-green-50"
                             : ""
                         }`}
                         onClick={() => handleNavItemClick(item.label)}
@@ -313,7 +313,7 @@ export default function Navbar() {
               <Link href="/auth" passHref>
                 <SheetClose>
                   <div className="cta-button justify-center text-sm flex items-center pr-12 cursor-pointer w-full absolute bottom-5">
-                    <div className="w-full bg-[#E3885A]  text-white px-7 py-4 rounded-xl font-bold">
+                    <div className="w-full bg-[#02B0F6]  text-white px-7 py-4 rounded-xl font-bold">
                       Login or Sign up
                     </div>
                   </div>

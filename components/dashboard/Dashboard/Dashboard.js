@@ -126,7 +126,7 @@ export default function Dash() {
   //         action: (
   //           <ToastAction
   //             altText="Deposit"
-  //             className={`font-bold bg-[#E3885A] text-white`}
+  //             className={`font-bold bg-[#02B0F6] text-white`}
   //           >
   //             <Link href="/dashboard/deposits" passHref>
   //               Deposit
@@ -222,7 +222,7 @@ export default function Dash() {
                     <div className="block">
                       {" "}
                       <div
-                        className={`icon-cont bg-red-200 text-[#E3885A]  ${
+                        className={`icon-cont bg-red-200 text-[#02B0F6]  ${
                           isDarkMode
                             ? " bg-[#00a05530]"
                             : "border bg-[#00a05510]"
@@ -295,8 +295,8 @@ export default function Dash() {
                     <div
                       className={`mx-1 ${
                         isDarkMode
-                          ? "text-[#E3885A] bg-[#00a05520]"
-                          : "bg-[#00a05510] text-[#E3885A]"
+                          ? "text-[#02B0F6] bg-[#00a05520]"
+                          : "bg-[#00a05510] text-[#02B0F6]"
                       }  flex font-bold text-xs items-center cursor-pointer md:px-4 md:py-3 p-3 rounded-full md:rounded-lg`}
                     >
                       <svg
@@ -312,7 +312,7 @@ export default function Dash() {
                   </Link>
                   <Link href="dashboard/deposits" passHref>
                     {" "}
-                    <div className="mx-1 bg-[#E3885A] text-white flex font-bold text-xs items-center cursor-pointer md:px-4 md:py-3 p-3 rounded-full md:rounded-lg">
+                    <div className="mx-1 bg-[#02B0F6] text-white flex font-bold text-xs items-center cursor-pointer md:px-4 md:py-3 p-3 rounded-full md:rounded-lg">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
@@ -351,7 +351,7 @@ export default function Dash() {
             <div className="flex items-center gap-x-2">
               <div className="icon">
                 <div
-                  className={`rounded-full text-[#E3885A] p-3 ${
+                  className={`rounded-full text-[#02B0F6] p-3 ${
                     isDarkMode ? "bg-[#00a05520]" : "bg-[#00a05510]"
                   }`}
                 >
@@ -378,7 +378,7 @@ export default function Dash() {
                     }`}
                   >
                     <div
-                      className="bar absolute top-0 left-0 h-full rounded-full bg-[#E3885A]"
+                      className="bar absolute top-0 left-0 h-full rounded-full bg-[#02B0F6]"
                       style={{ width: `${details.tradingProgress}%` }}
                     ></div>
                   </div>

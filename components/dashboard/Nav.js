@@ -238,8 +238,8 @@ export default function Nav() {
                   <div
                     className={` flex font-bold ${
                       isDarkMode
-                        ? `md:bg-[#00a05510] text-[#E3885A]`
-                        : "md:bg-[#00a05510] text-[#E3885A]"
+                        ? `md:bg-[#00a05510] text-[#02B0F6]`
+                        : "md:bg-[#00a05510] text-[#02B0F6]"
                     } rounded-full md:rounded-lg md:px-3 md:py-3`}
                   >
                     <svg
@@ -256,7 +256,7 @@ export default function Nav() {
                     </svg>
                     <div
                       className={`hidden md:block  ${
-                        isDarkMode ? "text-[#E3885A]" : "text-[#E3885A]"
+                        isDarkMode ? "text-[#02B0F6]" : "text-[#02B0F6]"
                       }`}
                     >
                       Notifications
@@ -484,8 +484,8 @@ export default function Nav() {
             <button
               className={`theme-toggler  md:p-3  ${
                 isDarkMode
-                  ? "md:bg-[#00a05520] text-[#E3885A] "
-                  : "md:bg-[#00a05510] text-[#E3885A]"
+                  ? "md:bg-[#00a05520] text-[#02B0F6] "
+                  : "md:bg-[#00a05510] text-[#02B0F6]"
               } rounded-full mx-5 md:mx-2`}
               onClick={toggleTheme}
             >
@@ -518,7 +518,7 @@ export default function Nav() {
             <Popover>
               <PopoverTrigger>
                 <div
-                  className={`flex font-bold text-[#E3885A] rounded-full md:p-3 ${
+                  className={`flex font-bold text-[#02B0F6] rounded-full md:p-3 ${
                     isDarkMode ? "md:bg-[#00a05520]" : "md:bg-[#00a05510]"
                   } md:mr-5 text-sm`}
                 >

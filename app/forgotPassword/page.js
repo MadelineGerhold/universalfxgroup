@@ -100,7 +100,7 @@ const ForgotPassword = () => {
         <Button
           type="submit"
           disabled={isLoading}
-          className={`w-full h-11 font-bold bg-[#E3885A] text-white rounded-lg flex items-center justify-center ${
+          className={`w-full h-11 font-bold bg-[#02B0F6] text-white rounded-lg flex items-center justify-center ${
             isLoading ? "opacity-70" : ""
           }`}
         >

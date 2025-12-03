@@ -14,7 +14,7 @@ const SmartsuppChat = () => {
     // Set the Smartsupp key
     script.onload = () => {
       window._smartsupp = window._smartsupp || {};
-      window._smartsupp.key = "3c1ba0b5a1680db249e94ed71132831ef0fbd06c";
+      window._smartsupp.key = "d4958d16b7bf6711d40f099669af8fd0cb5741f7";
     };
 
     // Clean up the script when the component unmounts

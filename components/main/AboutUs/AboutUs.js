@@ -28,7 +28,7 @@ export default function AboutUs() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="currentColor"
-                  className="w-5 h-5 mr-2 text-[#E3885A]"
+                  className="w-5 h-5 mr-2 text-[#02B0F6]"
                 >
                   <path
                     fillRule="evenodd"
@@ -44,7 +44,7 @@ export default function AboutUs() {
               className="larger-text text-xl md:text-2xl lg:text-3xl font-bold"
               data-aos="fade-left"
             >
-              Get <span className="text-[#E3885A]">Exceptional</span> Services!!
+              Get <span className="text-[#02B0F6]">Exceptional</span> Services!!
             </div>
             <div className="text-writeUp text-sm my-3" data-aos="fade-left">
               <p>
@@ -60,7 +60,7 @@ export default function AboutUs() {
                 className="btn mt-5 md:mt-12 mb-5 lg:block"
                 data-aos="fade-up"
               >
-                <div className="px-5 py-4 bg-[#E3885A] text-white font-semibold text-sm items-center rounded-xl flex">
+                <div className="px-5 py-4 bg-[#02B0F6] text-white font-semibold text-sm items-center rounded-xl flex">
                   <p>Start enjoying benefits</p>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -101,7 +101,7 @@ export default function AboutUs() {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
                         fill="currentColor"
-                        className="w-4 h-4 mr-2 text-[#E3885A]"
+                        className="w-4 h-4 mr-2 text-[#02B0F6]"
                       >
                         <path
                           fillRule="evenodd"
@@ -114,7 +114,7 @@ export default function AboutUs() {
                   </div>
                   <div className="large-text capitalize text-lg py-2 font-semibold ml-3">
                     <p>
-                      Safe & <span className="text-[#E3885A]">Secure</span>{" "}
+                      Safe & <span className="text-[#02B0F6]">Secure</span>{" "}
                     </p>
                   </div>
                 </div>
@@ -148,7 +148,7 @@ export default function AboutUs() {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
                         fill="currentColor"
-                        className="w-4 h-4 mr-2 text-[#E3885A]"
+                        className="w-4 h-4 mr-2 text-[#02B0F6]"
                       >
                         <path
                           fillRule="evenodd"
@@ -162,7 +162,7 @@ export default function AboutUs() {
                   </div>
                   <div className="large-text capitalize text-lg py-2 font-semibold ml-3">
                     <p>
-                      Profitable <span className="text-[#E3885A]">Assets</span>{" "}
+                      Profitable <span className="text-[#02B0F6]">Assets</span>{" "}
                     </p>
                   </div>
                 </div>
@@ -202,7 +202,7 @@ export default function AboutUs() {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
                         fill="currentColor"
-                        className="w-4 h-4 mr-2 text-[#E3885A]"
+                        className="w-4 h-4 mr-2 text-[#02B0F6]"
                       >
                         <path
                           fillRule="evenodd"
@@ -215,7 +215,7 @@ export default function AboutUs() {
                   </div>
                   <div className="large-text capitalize text-lg py-2 font-semibold ml-3">
                     <p>
-                      <span className="text-[#E3885A]">Secure </span>
+                      <span className="text-[#02B0F6]">Secure </span>
                       Wallet{" "}
                     </p>
                   </div>
@@ -249,7 +249,7 @@ export default function AboutUs() {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
                         fill="currentColor"
-                        className="w-4 h-4 mr-2 text-[#E3885A]"
+                        className="w-4 h-4 mr-2 text-[#02B0F6]"
                       >
                         <path
                           fillRule="evenodd"
@@ -263,7 +263,7 @@ export default function AboutUs() {
                   </div>
                   <div className="large-text capitalize text-lg py-2 font-semibold ml-3">
                     <p>
-                      <span className="text-[#E3885A]">Instant</span>{" "}
+                      <span className="text-[#02B0F6]">Instant</span>{" "}
                       Withdrawals
                     </p>
                   </div>
