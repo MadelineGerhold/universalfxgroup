@@ -100,7 +100,7 @@ export default function ManageUsersTable() {
             withdrawalHistory: user.withdrawalHistory,
             trades: user.trades,
             stakings: user.stakings,
-            kycStatus: user.kycStatus || "pending",
+            isVerified: !!user.isVerified,
             totalDeposits:
               user.depositHistory && Array.isArray(user.depositHistory)
                 ? user.depositHistory.reduce(
@@ -224,21 +224,19 @@ export default function ManageUsersTable() {
       ),
     },
     {
-      accessorKey: "kycStatus",
-      header: "KYC Status",
+      accessorKey: "isVerified",
+      header: "Verified",
       cell: ({ row }) => {
-        const status = row.getValue("kycStatus");
+        const verified = row.getValue("isVerified");
         return (
           <Badge
             className={
-              status === "approved"
+              verified
                 ? "bg-green-100 text-green-800"
-                : status === "declined"
-                ? "bg-red-100 text-red-800"
                 : "bg-yellow-100 text-yellow-800"
             }
           >
-            {status}
+            {verified ? "Yes" : "No"}
           </Badge>
         );
       },
@@ -576,14 +574,12 @@ export default function ManageUsersTable() {
                       <div className="flex items-center gap-2">
                         <Badge
                           className={
-                            user.kycStatus === "approved"
+                            user.isVerified
                               ? "bg-green-100 text-green-800"
-                              : user.kycStatus === "declined"
-                              ? "bg-red-100 text-red-800"
                               : "bg-yellow-100 text-yellow-800"
                           }
                         >
-                          {user.kycStatus}
+                          {user.isVerified ? "Verified" : "No"}
                         </Badge>
                         <DropdownMenu>
                           <DropdownMenuTrigger asChild>

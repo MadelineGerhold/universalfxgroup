@@ -34,7 +34,7 @@ export default function AdminNav() {
       name: "Verification",
       href: "/admin/verification",
       icon: UserCheck,
-      description: "KYC and fee management",
+      description: "Verification and settings",
     },
     {
       name: "Edit Address",

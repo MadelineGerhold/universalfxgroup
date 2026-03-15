@@ -8,23 +8,10 @@ export async function POST(request) {
     await request.json();
 
   try {
-    // Get KYC fee from admin settings
-    const adminSettings = await fetch(
-      `${
-        process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"
-      }/db/adminSettings/api`
-    );
-    const settings = await adminSettings.json();
-    const kycFee = settings.kycFee || 25;
-
-    // Update user with KYC fee
+    // Update user - documents submitted, under review
     await UserModel.updateOne(
       { email: email.toLowerCase() },
-      {
-        kycFee: kycFee,
-        kycStatus: "pending",
-        isVerified: false, // Set to false when KYC is submitted
-      }
+      { isVerified: false }
     );
 
     // Create a Nodemailer transporter using the correct SMTP settings for Hostinger
@@ -38,23 +25,14 @@ export async function POST(request) {
       },
     });
 
-    // Email content
-    const emailContent =
-      getIDVerificationTemplate(
-        formData,
-        frontIDSecureUrl,
-        backIDSecureUrl,
-        email,
-        idType
-      ) +
-      `
-    <div style="background: #fef3c7; border: 1px solid #f59e0b; border-radius: 8px; padding: 16px; margin: 24px 0;">
-      <div style="font-weight: 600; color: #92400e; margin-bottom: 8px; font-size: 14px;">💰 KYC Fee Required</div>
-      <div style="color: #92400e; font-size: 14px; line-height: 1.5;">
-        KYC verification fee: $${kycFee}. This fee must be paid before verification can be processed.
-      </div>
-    </div>
-  `;
+    // Email content (ID verification only, no fee block)
+    const emailContent = getIDVerificationTemplate(
+      formData,
+      frontIDSecureUrl,
+      backIDSecureUrl,
+      email,
+      idType
+    );
 
     // Email options
     const mailOptions = {
@@ -68,7 +46,7 @@ export async function POST(request) {
     await transporter.sendMail(mailOptions);
     console.log(frontIDSecureUrl, backIDSecureUrl); // Debugging output
     return NextResponse.json(
-      { message: "Email sent successfully", kycFee: kycFee },
+      { message: "Email sent successfully" },
       { status: 200 }
     );
   } catch (error) {

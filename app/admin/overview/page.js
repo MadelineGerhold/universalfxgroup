@@ -29,8 +29,6 @@ export default function AdminOverview() {
     totalUsers: 0,
     totalDeposits: 0,
     totalWithdrawals: 0,
-    pendingKYC: 0,
-    pendingFees: 0,
     todayTransactions: 0,
   });
   const [recentTransactions, setRecentTransactions] = useState([]);
@@ -72,24 +70,11 @@ export default function AdminOverview() {
             : 0),
         0
       );
-      const pendingKYC = users.filter(
-        (user) => user.kycStatus === "pending"
-      ).length;
-      const pendingFees = users.reduce(
-        (sum, user) =>
-          sum +
-          (user.withdrawalFeeHistory?.filter((fee) => fee.status === "pending")
-            .length || 0),
-        0
-      );
-
       setStats({
         totalUsers,
         totalDeposits,
         totalWithdrawals,
-        pendingKYC,
-        pendingFees,
-        todayTransactions: 0, // Will be calculated from recent transactions
+        todayTransactions: 0,
       });
 
       // Get recent transactions (last 10)
@@ -239,36 +224,6 @@ export default function AdminOverview() {
           <CardContent className="p-4 sm:p-6">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-sm font-medium text-gray-600">Pending KYC</p>
-                <p className="text-2xl font-bold text-yellow-600">
-                  {stats.pendingKYC}
-                </p>
-              </div>
-              <UserCheck className="w-8 h-8 text-yellow-600" />
-            </div>
-          </CardContent>
-        </Card>
-
-        <Card>
-          <CardContent className="p-4 sm:p-6">
-            <div className="flex items-center justify-between">
-              <div>
-                <p className="text-sm font-medium text-gray-600">
-                  Pending Fees
-                </p>
-                <p className="text-2xl font-bold text-orange-600">
-                  {stats.pendingFees}
-                </p>
-              </div>
-              <CreditCard className="w-8 h-8 text-orange-600" />
-            </div>
-          </CardContent>
-        </Card>
-
-        <Card>
-          <CardContent className="p-4 sm:p-6">
-            <div className="flex items-center justify-between">
-              <div>
                 <p className="text-sm font-medium text-gray-600">
                   Today&apos;s Transactions
                 </p>
@@ -312,7 +267,7 @@ export default function AdminOverview() {
                 <div>
                   <h3 className="font-semibold text-gray-900">Verification</h3>
                   <p className="text-sm text-gray-600">
-                    KYC and fee management
+                    Verification and settings
                   </p>
                 </div>
               </div>

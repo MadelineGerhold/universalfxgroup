@@ -22,7 +22,6 @@ import {
   CheckCircle,
   XCircle,
   AlertCircle,
-  CreditCard,
 } from "lucide-react";
 import Swal from "sweetalert2";
 
@@ -155,15 +154,10 @@ export default function Withdrawals() {
         }));
 
         setNotification(
-          `Withdrawal of $${formData.amount} submitted - Fee payment required`,
+          `Withdrawal of $${formData.amount} submitted - Processing`,
           "transaction",
           "pending"
         );
-
-        // Redirect to withdrawal fee payment page
-        setTimeout(() => {
-          window.location.href = `/dashboard/withdrawal-fee-payment?id=${response.data.id}`;
-        }, 2000);
       } else {
         const errorMessage =
           response.data.message ||
@@ -196,19 +190,6 @@ export default function Withdrawals() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-
-    // Check KYC status first
-    if (details.kycStatus !== "approved") {
-      Swal.fire({
-        icon: "warning",
-        title: "KYC Verification Required",
-        text: "Please complete KYC verification before making withdrawals.",
-        background: isDarkMode ? "#111" : "#fff",
-        color: isDarkMode ? "#fff" : "#000",
-      });
-      setLoading(false);
-      return;
-    }
 
     let computedTradeBonus = 0;
     if (formData.withdrawalAccount === "mainAccount") {
@@ -259,13 +240,6 @@ export default function Withdrawals() {
           <Badge className="bg-red-100 text-red-800">
             <XCircle className="w-3 h-3 mr-1" />
             Failed
-          </Badge>
-        );
-      case "pending_fee":
-        return (
-          <Badge className="bg-yellow-100 text-yellow-800">
-            <CreditCard className="w-3 h-3 mr-1" />
-            Fee Required
           </Badge>
         );
       case "pending":
